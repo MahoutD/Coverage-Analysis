@@ -1,0 +1,14 @@
+# Build directory
+/build/
+
+# IDE & Editor settings
+.vs/
+.vscode/
+.idea/
+*.user
+*.user.*
+*.suo
+
+# Operating System files
+.DS_Store
+Thumbs.db

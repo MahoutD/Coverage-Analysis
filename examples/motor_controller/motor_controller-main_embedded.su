@@ -1,0 +1,5 @@
+Source/main_embedded.c:32:6:ISR_10kHz_CurrentLoop	96	static
+Source/main_embedded.c:55:6:Task_100Hz_StateMachine	48	static
+Source/main_embedded.c:145:6:Task_10Hz_Diagnostics	80	static
+Source/main_embedded.c:164:6:System_Hardware_Init	48	static
+Source/main_embedded.c:191:5:main	160	static

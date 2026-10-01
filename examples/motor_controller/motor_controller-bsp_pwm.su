@@ -1,0 +1,8 @@
+Source/bsp_pwm.c:15:5:bsp_pwm_init	8	static
+Source/bsp_pwm.c:24:6:bsp_pwm_set_duty	8	static
+Source/bsp_pwm.c:35:6:bsp_pwm_enable_outputs	8	static
+Source/bsp_pwm.c:39:6:bsp_pwm_disable_outputs	8	static
+Source/bsp_pwm.c:46:6:bsp_adc_read_phase_currents	8	static
+Source/bsp_pwm.c:64:7:bsp_adc_read_bus_voltage	8	static
+Source/bsp_pwm.c:69:7:bsp_adc_read_temperature	8	static
+Source/bsp_pwm.c:74:5:bsp_pwm_calibrate_offsets	8	static

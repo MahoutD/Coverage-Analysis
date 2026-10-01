@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/app_icon.svg</file>
+        <file>icons/open_file.svg</file>
+        <file>icons/import_dir.svg</file>
+        <file>icons/save_file.svg</file>
+        <file>icons/export_report.svg</file>
+        <file>icons/static_analysis.svg</file>
+        <file>icons/path_explorer.svg</file>
+        <file>icons/instrument.svg</file>
+        <file>icons/run_stimulus.svg</file>
+        <file>icons/run_sim.svg</file>
+        <file>icons/user_manual.svg</file>
+        <file>icons/system_log.svg</file>
+        <file>icons/add_file.svg</file>
+        <file>icons/add_folder.svg</file>
+        <file>icons/delete.svg</file>
+        <file>icons/zoom_in.svg</file>
+        <file>icons/zoom_out.svg</file>
+        <file>icons/fit_window.svg</file>
+        <file>icons/reset_zoom.svg</file>
+        <file>icons/refresh.svg</file>
+        <file>icons/c_file.svg</file>
+        <file>icons/h_file.svg</file>
+        <file>icons/py_file.svg</file>
+        <file>icons/html_file.svg</file>
+        <file>icons/folder.svg</file>
+        <file>icons/project.svg</file>
+        <file>icons/stack_analysis.svg</file>
+        <file>icons/coverage_analysis.svg</file>
+    </qresource>
+</RCC>

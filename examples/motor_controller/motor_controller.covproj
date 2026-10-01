@@ -1,0 +1,33 @@
+{
+    "name": "车载电机驱动与故障安全系统 (Motor Controller)",
+    "description": "车规级高可靠三相直流无刷电机 (BLDC) FOC 矢量控制与故障安全闭锁保护系统 (符合 ISO 26262 ASIL-B 规范)。包含速度/电流双闭环 PID 控制器、相电流校准、PWM 死区硬件驱动、超温/过压闭锁、CAN 报文通信协议栈以及主调度器。",
+    "targetArch": "ARM Cortex-M4 (STM32F4)",
+    "outputDir": "Report",
+    "activeFile": "Source/motor_controller.c",
+    "sourceFiles": [
+        "Source/main_embedded.c",
+        "Source/motor_controller.c",
+        "Source/pid_controller.c",
+        "Source/fault_recorder.c",
+        "Source/bsp_pwm.c",
+        "Source/safety_monitor.c",
+        "Source/can_comm.c",
+        "Header/motor_types.h",
+        "Header/motor_controller.h",
+        "Header/pid_controller.h",
+        "Header/fault_recorder.h",
+        "Header/bsp_pwm.h",
+        "Header/safety_monitor.h",
+        "Header/can_comm.h"
+    ],
+    "scriptFiles": [
+        "Script/normal_cruise.py",
+        "Script/overtemp_fault.py",
+        "Script/voltage_fluctuation.py",
+        "Script/emergency_estop.py",
+        "Script/can_frame_injector.py",
+        "Script/boundary_fuzzer.py"
+    ],
+    "createdTime": "2026-09-30T10:00:00",
+    "lastModifiedTime": "2026-10-01T10:30:00"
+}

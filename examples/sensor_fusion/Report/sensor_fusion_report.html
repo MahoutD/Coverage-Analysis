@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>嵌入式 C 静态分析与覆盖率综合度量报告</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f8f9fa; color: #212529; margin: 0; padding: 24px; line-height: 1.5; }
+  .container { max-width: 1100px; margin: 0 auto; background: #ffffff; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); padding: 32px; }
+  .header { border-bottom: 2px solid #0d6efd; padding-bottom: 16px; margin-bottom: 24px; }
+  .header h1 { margin: 0 0 8px 0; color: #0d6efd; font-size: 24px; }
+  .header .meta { color: #6c757d; font-size: 13px; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+  .card { background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 6px; padding: 16px; text-align: center; }
+  .card .num { font-size: 26px; font-weight: bold; margin: 4px 0; }
+  .card .label { font-size: 13px; color: #6c757d; }
+  .card-cov { border-left: 4px solid #198754; }
+  .card-branch { border-left: 4px solid #0d6efd; }
+  .card-issues { border-left: 4px solid #dc3545; }
+  .card-complex { border-left: 4px solid #ffc107; }
+  h2 { font-size: 18px; color: #343a40; border-left: 4px solid #0d6efd; padding-left: 10px; margin-top: 32px; margin-bottom: 16px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 13px; }
+  th, td { padding: 10px 12px; text-align: left; border: 1px solid #dee2e6; }
+  th { background-color: #f1f3f5; font-weight: 600; }
+  tr:nth-child(even) { background-color: #fdfdfd; }
+  .badge { display: inline-block; padding: 3px 8px; font-size: 11px; font-weight: 600; border-radius: 4px; color: #fff; }
+  .badge-critical { background-color: #dc3545; }
+  .badge-error { background-color: #fd7e14; }
+  .badge-warning { background-color: #ffc107; color: #212529; }
+  .badge-info { background-color: #0dcaf0; color: #212529; }
+  .badge-success { background-color: #198754; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #dee2e6; text-align: center; color: #adb5bd; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>嵌入式 C 静态分析与覆盖率综合度量报告</h1>
+    <div class="meta">
+      <b>分析源文件:</b> sensor_fusion.c &nbsp;|&nbsp; <b>生成时间:</b> 2026-10-01 00:18:17 &nbsp;|&nbsp; <b>架构模式:</b> 前后端分离 C++17 纯算法内核
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card card-cov">
+      <div class="label">语句覆盖率 (Statement)</div>
+      <div class="num" style="color: #198754;">0.0%</div><div class="label">已覆盖: 0 / 总 26 行</div></div>    <div class="card card-branch">
+      <div class="label">分支覆盖率 (Branch)</div>
+      <div class="num" style="color: #0d6efd;">0.0%</div><div class="label">已覆盖分支: 0 / 总 6</div></div>    <div class="card card-issues">
+      <div class="label">检测缺陷违规</div>
+      <div class="num" style="color: #dc3545;">1</div><div class="label">严重: 0 | 警告: 1</div></div>    <div class="card card-complex">
+      <div class="label">最大函数圈复杂度</div>
+      <div class="num" style="color: #b58900;">5</div><div class="label">被测函数总数: 3 个</div></div></div><h2>1. 静态安全与 MISRA C:2012 规则检查缺陷清单</h2><table><thead><tr><th style='width: 50px;'>序号</th><th style='width: 90px;'>级别</th><th style='width: 170px;'>规则编号</th><th style='width: 80px;'>位置</th><th>缺陷描述</th><th>建议整改措施</th></tr></thead><tbody><tr><td>1</td><td><span class='badge badge-warning'>警告 (Warning)</span></td><td><b>EMB-STACK-01</b></td><td>第 10 行</td><td>函数局部大数组 'temp_debug_log[512]' 超过安全栈限制 (256 字节)，存在栈溢出风险。</td><td><i>声明为 static 静态变量或分配在指定的 BSS 内存段中。</i></td></tr></tbody></table><h2>2. 函数度量与控制结构指标分布</h2><table><thead><tr><th>序号</th><th>函数名称</th><th>行号区间</th><th>语句数</th><th>分支数</th><th>圈复杂度</th><th>扇入数</th><th>扇出数</th><th>函数深度</th><th>调用深度</th><th>复杂度评定</th></tr></thead><tbody><tr><td>0</td><td><b>sensor_filter_init()</b></td><td>L4 ~ L19</td><td>9</td><td>2</td><td><b>3</b></td><td>0</td><td>2</td><td>2 层</td><td>第 1 层</td><td><span class='badge badge-success'>良好 (&le;5)</span></td></tr><tr><td>1</td><td><b>sensor_filter_update()</b></td><td>L21 ~ L37</td><td>10</td><td>2</td><td><b>3</b></td><td>0</td><td>0</td><td>2 层</td><td>第 1 层</td><td><span class='badge badge-success'>良好 (&le;5)</span></td></tr><tr><td>2</td><td><b>sensor_detect_spike()</b></td><td>L39 ~ L55</td><td>8</td><td>4</td><td><b>5</b></td><td>0</td><td>1</td><td>3 层</td><td>第 1 层</td><td><span class='badge badge-success'>良好 (&le;5)</span></td></tr></tbody></table>  <div class="footer">
+    本报告由 嵌入式 C 覆盖分析与静态分析套件 自动生成 | 前后端解耦 C++17 纯算法引擎
+  </div>
+</div>
+</body>
+</html>

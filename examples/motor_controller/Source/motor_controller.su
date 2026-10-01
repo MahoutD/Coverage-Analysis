@@ -1,0 +1,4 @@
+Source/motor_controller.c:13:6:motor_controller_init	48	static
+Source/motor_controller.c:32:6:motor_check_safety	8	static
+Source/motor_controller.c:61:6:motor_emergency_shutdown	8	static
+Source/motor_controller.c:70:6:motor_controller_update	8	static

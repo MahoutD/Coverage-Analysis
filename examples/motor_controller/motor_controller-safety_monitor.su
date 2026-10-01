@@ -1,0 +1,8 @@
+Source/safety_monitor.c:14:6:safety_monitor_init	8	static
+Source/safety_monitor.c:21:10:safety_monitor_evaluate	48	static
+Source/safety_monitor.c:74:6:safety_watchdog_kick	8	static
+Source/safety_monitor.c:78:6:safety_trigger_emergency_stop	8	static
+Source/safety_monitor.c:84:6:safety_clear_faults	8	static
+Source/safety_monitor.c:96:14:safety_get_recommended_state	8	static
+Source/safety_monitor.c:113:10:safety_monitor_get_faults	8	static
+Source/safety_monitor.c:117:6:safety_monitor_report_fault	8	static

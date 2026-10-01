@@ -1,0 +1,3 @@
+Source/sensor_fusion.c:4:6:sensor_filter_init	8	static
+Source/sensor_fusion.c:21:7:sensor_filter_update	8	static
+Source/sensor_fusion.c:39:6:sensor_detect_spike	8	static

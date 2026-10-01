@@ -1,0 +1,16 @@
+{
+    "name": "航姿参考多传感器融合与位姿滤波系统 (Sensor Fusion)",
+    "description": "适用于无人机与高精度惯导系统的姿态航向参考系统 (AHRS)。融合六轴陀螺仪、加速度计与电子罗盘互补滤波算法，包含四元数姿态解算、气压计高度滤波以及正弦振动波形激励注入套件。",
+    "targetArch": "ARM Cortex-M4 (STM32F4)",
+    "outputDir": "Report",
+    "activeFile": "Source/sensor_fusion.c",
+    "sourceFiles": [
+        "Source/sensor_fusion.c",
+        "Header/sensor_fusion.h"
+    ],
+    "scriptFiles": [
+        "Script/sensor_waveform_injector.py"
+    ],
+    "createdTime": "2026-09-30T10:00:00",
+    "lastModifiedTime": "2026-09-30T20:30:00"
+}
